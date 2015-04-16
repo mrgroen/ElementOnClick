@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="OnClickWidget.widget.OnClickWidget" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>OnClickWidget</name>
+  <description>Set 'on click' event on any DOM element and trigger a microflow.</description>
+
+  <icon></icon>
+
+  <properties>
+        <property key="dojoQuery" type="string" required="true" defaultValue="">
+            <caption>Dojo query</caption>
+            <category>Behavior</category>
+            <description>Select the DOM node based on a CSS selector.</description>
+        </property>
+        <property key="mfToExecute" type="microflow" required="true" defaultValue="">
+            <caption>Microflow</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute on click.</description>
+            <returnType type="Boolean"></returnType>
+        </property>
+        <property key="useTouchStart" type="boolean" required="true" defaultValue="false">
+            <caption>Use touchstart</caption>
+            <category>Behavior</category>
+            <description>Mobile event emulator using 'touchstart' instead of 'click'.</description>
+        </property>
+	</properties>
+</widget>
+
